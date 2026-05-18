@@ -6,3 +6,4 @@ chroma_db/
 *.xml
 __pycache__/
 .DS_Store
+source_docs/
