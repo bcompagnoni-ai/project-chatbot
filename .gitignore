@@ -1,6 +1,8 @@
 venv/
-chroma_db
+chroma_db/
 .Trash-1000/
 *.log
+*.pdf
+*.xml
 __pycache__/
 .DS_Store
