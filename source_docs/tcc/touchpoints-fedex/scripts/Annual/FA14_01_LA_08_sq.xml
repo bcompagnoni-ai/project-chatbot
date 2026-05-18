@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quer:query productCode="OR1015" model="http://www.taleo.com/ws/or800/2009/01" projectedClass="EmployeeReview" locale="en" mode="CSV" csvheader="true" csvdelimiter="|" largegraph="true" preventDuplicates="false" xmlns:quer="http://www.taleo.com/ws/integration/query"><quer:subQueries/>
+
+<quer:projections>
+<quer:projection><quer:field path="Number"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,Title,Name"/></quer:projection>
+<quer:projection><quer:field path="StartDate"/></quer:projection>
+<quer:projection><quer:field path="EndDate"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,EmployeeID"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,FirstName"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,Initial"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,LastName"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,Title"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,Status,Code"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,Title,Name"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,Code"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,FirstName"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,Initial"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,LastName"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,Title"/></quer:projection>
+
+<quer:projection><quer:field path="ReviewDefinition,Instruction,DefaultContextualizedTextValue,ContextualizedTextValue"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,SummaryInstruction,DefaultContextualizedTextValue,ContextualizedTextValue"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,Name"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,SectionInstruction,DefaultContextualizedTextValue,ContextualizedTextValue"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,ReviewItems,Name"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,OverallEmployeeReviewEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,ReviewItems,EmployeeReviewEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,ReviewItems,SelfAssessmentEntry,Comment"/></quer:projection>
+
+<quer:projection><quer:field path="ManagerReview,OverallScore,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,OverallScore,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,OverallScore,Comment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,Weight"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,Description"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,SectionsEntries,Comment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,SectionsEntries,ItemsEntries,Competency,DescriptionText"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,CompetencySectionEntry,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,CompetencySectionEntry,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,CompetencySectionEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,FinalComment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,InitialValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,ActualValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,TargetValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,AcknowledgementComment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,ReviewMeetingComment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,HistoryComment"/></quer:projection>
+
+<quer:projection><quer:field path="SelfReview,OverallScore,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,OverallScore,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,OverallScore,Comment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,Weight"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,CompetencySectionEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,AcknowledgementComment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,ReviewMeetingComment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,HistoryComment"/></quer:projection>
+
+
+<quer:projection alias="MgrRevCreationDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,CreationDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevApprovedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ApprovedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevReleasedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ReleasedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevAcknowledgementReqdDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,AcknowledgementRequestedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevAcknowledgedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,AcknowledgedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevReviewMeetingDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ReviewMeetingDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevCalibratedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,CalibratedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevClosedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ClosedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevCreationDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,CreationDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevApprovedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ApprovedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevReleasedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ReleasedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevAcknowledgementReqDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,AcknowledgementRequestedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevAcknowledgedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,AcknowledgedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevReviewMeetingDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ReviewMeetingDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevCalibratedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,CalibratedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevClosedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ClosedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection>
+</quer:projections>
+
+<quer:projectionFilterings/>
+<quer:filterings>
+<quer:filtering><quer:greaterThanOrEqual><quer:field path="StartDate"/><quer:date>2014-01-01</quer:date></quer:greaterThanOrEqual></quer:filtering>
+<quer:filtering><quer:lessThanOrEqual><quer:field path="EndDate"/><quer:date>2014-12-31</quer:date></quer:lessThanOrEqual></quer:filtering>
+<!-- <quer:filtering><quer:equal><quer:field path="ReviewDefinition,Code"/><quer:string>2017_FedEx_Supply_Chain_Annual_Leader</quer:string></quer:equal></quer:filtering> -->
+
+<quer:filtering>
+  <quer:includedIn>
+    <quer:field path="Number"/>
+    <quer:list>
+
+
+<quer:string>23563</quer:string> 
+<quer:string>23564</quer:string> 
+<quer:string>23565</quer:string> 
+<quer:string>23566</quer:string> 
+<quer:string>23567</quer:string> 
+<quer:string>23568</quer:string> 
+<quer:string>23569</quer:string> 
+<quer:string>23570</quer:string> 
+<quer:string>23571</quer:string> 
+<quer:string>23572</quer:string> 
+<quer:string>23573</quer:string> 
+<quer:string>23574</quer:string> 
+<quer:string>23575</quer:string> 
+<quer:string>23576</quer:string> 
+<quer:string>23577</quer:string> 
+<quer:string>23578</quer:string> 
+<quer:string>23579</quer:string> 
+<quer:string>23580</quer:string> 
+<quer:string>23581</quer:string> 
+<quer:string>23582</quer:string> 
+<quer:string>23583</quer:string> 
+<quer:string>23584</quer:string> 
+<quer:string>23585</quer:string> 
+<quer:string>23586</quer:string> 
+<quer:string>23587</quer:string> 
+<quer:string>23588</quer:string> 
+<quer:string>23589</quer:string> 
+<quer:string>23590</quer:string> 
+<quer:string>23591</quer:string> 
+<quer:string>23592</quer:string> 
+<quer:string>23593</quer:string> 
+<quer:string>23594</quer:string> 
+<quer:string>23595</quer:string> 
+<quer:string>23596</quer:string> 
+<quer:string>23597</quer:string> 
+<quer:string>23598</quer:string> 
+<quer:string>23599</quer:string> 
+<quer:string>23600</quer:string> 
+<quer:string>23601</quer:string> 
+<quer:string>23602</quer:string> 
+<quer:string>23603</quer:string> 
+<quer:string>23604</quer:string> 
+<quer:string>23605</quer:string> 
+<quer:string>23606</quer:string> 
+<quer:string>23607</quer:string> 
+<quer:string>23608</quer:string> 
+<quer:string>23609</quer:string> 
+<quer:string>23610</quer:string> 
+<quer:string>23611</quer:string> 
+<quer:string>23612</quer:string> 
+<quer:string>23613</quer:string> 
+<quer:string>23614</quer:string> 
+<quer:string>23615</quer:string> 
+<quer:string>23616</quer:string> 
+<quer:string>23617</quer:string> 
+<quer:string>23618</quer:string> 
+<quer:string>23619</quer:string> 
+<quer:string>23620</quer:string> 
+<quer:string>23621</quer:string> 
+<quer:string>23622</quer:string> 
+<quer:string>23623</quer:string> 
+<quer:string>23624</quer:string> 
+<quer:string>23625</quer:string> 
+<quer:string>23626</quer:string> 
+<quer:string>23627</quer:string> 
+<quer:string>23628</quer:string> 
+<quer:string>23629</quer:string> 
+<quer:string>23630</quer:string> 
+<quer:string>23631</quer:string> 
+<quer:string>23632</quer:string> 
+<quer:string>23633</quer:string> 
+<quer:string>23634</quer:string> 
+<quer:string>23635</quer:string> 
+<quer:string>23636</quer:string> 
+<quer:string>23637</quer:string> 
+<quer:string>23638</quer:string> 
+<quer:string>23639</quer:string> 
+<quer:string>23640</quer:string> 
+<quer:string>23641</quer:string> 
+<quer:string>23642</quer:string> 
+<quer:string>23643</quer:string> 
+<quer:string>23644</quer:string> 
+<quer:string>23645</quer:string> 
+<quer:string>23646</quer:string> 
+<quer:string>23647</quer:string> 
+<quer:string>23648</quer:string> 
+<quer:string>23649</quer:string> 
+<quer:string>23650</quer:string> 
+<quer:string>23651</quer:string> 
+<quer:string>23652</quer:string> 
+<quer:string>23653</quer:string> 
+<quer:string>23654</quer:string> 
+<quer:string>23655</quer:string> 
+<quer:string>23656</quer:string> 
+<quer:string>23657</quer:string> 
+<quer:string>23658</quer:string> 
+<quer:string>23659</quer:string> 
+<quer:string>23660</quer:string> 
+<quer:string>23661</quer:string> 
+<quer:string>23662</quer:string> 
+<quer:string>23663</quer:string> 
+<quer:string>23664</quer:string> 
+<quer:string>23665</quer:string> 
+<quer:string>23666</quer:string> 
+
+	
+    </quer:list>
+  </quer:includedIn>
+</quer:filtering>
+
+</quer:filterings>
+
+<quer:sortings><quer:sorting ascending="true"><quer:field path="Number"/></quer:sorting></quer:sortings><quer:sortingFilterings/><quer:groupings/><quer:joinings/></quer:query>

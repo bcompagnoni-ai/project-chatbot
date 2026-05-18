@@ -1,0 +1,60 @@
+--- START OF XSL FILE: ReplaceSymbols.xsl ---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ======================================= -->
+<!-- Replace occurrences of Symbols with a value provided at runtime. -->
+<!-- Symbols are set in the document with the following syntax [SYMBOL_NAME], for example [ZONE]. -->
+<!-- ======================================= -->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:cli="http://www.taleo.com/ws/integration/client">
+	<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+	<!-- ======================================= -->
+	<!-- Parameters -->
+	<!-- Symbols: XML node containing the Symbols. Example: <cli:Symbols xmlns:cli="http://www.taleo.com/ws/integration/client"><cli:Symbol name="ZONE">test.taleo.net</cli:Symbol></cli:Symbols> -->
+	<!-- ======================================= -->
+	<xsl:param name="Symbols"/>
+	<!-- ======================================= -->
+	<!-- Default template renders content as is. -->
+	<!-- ======================================= -->
+	<xsl:template match="*|processing-instruction()|comment()">
+		<xsl:copy>
+			<xsl:apply-templates select="*|@*|text()|processing-instruction()|comment()"/>
+		</xsl:copy>
+	</xsl:template>
+	<!-- ======================================= -->
+	<!-- Process text nodes. -->
+	<!-- ======================================= -->
+	<xsl:template match="text()">
+		<xsl:call-template name="replaceSymbols">
+			<xsl:with-param name="text" select="."/>
+		</xsl:call-template>
+	</xsl:template>
+	<!-- ======================================= -->
+	<!-- Process attributes. -->
+	<!-- ======================================= -->
+	<xsl:template match="@*">
+		<xsl:attribute name="{name(.)}"><xsl:call-template name="replaceSymbols"><xsl:with-param name="text" select="."/></xsl:call-template></xsl:attribute>
+	</xsl:template>
+	<!-- ======================================= -->
+	<!-- Recursively replace Symbols within a text string. -->
+	<!-- ======================================= -->
+	<xsl:template name="replaceSymbols">
+		<xsl:param name="text"/>
+		<xsl:param name="Symbol_index" select="1"/>
+		<xsl:choose>
+			<xsl:when test="$Symbol_index &gt; count($Symbols//cli:Symbol)">
+				<xsl:value-of select="$text"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:variable name="name" select="$Symbols//cli:Symbol[$Symbol_index]/@name"/>
+				<xsl:variable name="value" select="replace(replace($Symbols//cli:Symbol[$Symbol_index]/text(), '\\', '\\\\'), '\$', '\\\$')"/>
+				<xsl:call-template name="replaceSymbols">
+					<xsl:with-param name="text">
+						<xsl:value-of select="replace($text, concat('\[', $name, '\]'), $value)"/>
+					</xsl:with-param>
+					<xsl:with-param name="Symbol_index" select="$Symbol_index + 1"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+</xsl:stylesheet>
+
+--- END OF XSL FILE: ReplaceSymbols.xsl ---

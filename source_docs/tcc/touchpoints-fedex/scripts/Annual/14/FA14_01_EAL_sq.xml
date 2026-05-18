@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quer:query productCode="OR1015" model="http://www.taleo.com/ws/or800/2009/01" projectedClass="EmployeeReview" locale="en" mode="CSV" csvheader="true" csvdelimiter="|" largegraph="true" preventDuplicates="false" xmlns:quer="http://www.taleo.com/ws/integration/query"><quer:subQueries/>
+
+<quer:projections>
+<quer:projection><quer:field path="Number"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,Title,Name"/></quer:projection>
+<quer:projection><quer:field path="StartDate"/></quer:projection>
+<quer:projection><quer:field path="EndDate"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,EmployeeID"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,FirstName"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,Initial"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,LastName"/></quer:projection>
+<quer:projection><quer:field path="Employee,TalentUser,ArUser,Title"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,Status,Code"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,Title,Name"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,Code"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,FirstName"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,Initial"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,LastName"/></quer:projection>
+<quer:projection><quer:field path="Manager,TalentUser,ArUser,Title"/></quer:projection>
+
+<quer:projection><quer:field path="ReviewDefinition,Instruction,DefaultContextualizedTextValue,ContextualizedTextValue"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,SummaryInstruction,DefaultContextualizedTextValue,ContextualizedTextValue"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,Name"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,SectionInstruction,DefaultContextualizedTextValue,ContextualizedTextValue"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,ReviewItems,Name"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,OverallEmployeeReviewEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,ReviewItems,EmployeeReviewEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="ReviewDefinition,ReviewSections,ReviewItems,SelfAssessmentEntry,Comment"/></quer:projection>
+
+<quer:projection><quer:field path="ManagerReview,OverallScore,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,OverallScore,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,OverallScore,Comment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,Weight"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,Description"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,SectionsEntries,Comment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,SectionsEntries,ItemsEntries,Competency,DescriptionText"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,CompetencySectionEntry,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,CompetencySectionEntry,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,CompetencySectionEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,FinalComment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,InitialValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,ActualValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,EmployeeGoalSectionEntry,ItemsEntries,EmployeeGoal,TargetValue"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,AcknowledgementComment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,ReviewMeetingComment"/></quer:projection>
+<quer:projection><quer:field path="ManagerReview,HistoryComment"/></quer:projection>
+
+<quer:projection><quer:field path="SelfReview,OverallScore,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,OverallScore,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,OverallScore,Comment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,RatingValue,Name"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,RatingValue,NumericValue"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,EmployeeGoalSectionEntry,Weight"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,CompetencySectionEntry,Comment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,AcknowledgementComment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,ReviewMeetingComment"/></quer:projection>
+<quer:projection><quer:field path="SelfReview,HistoryComment"/></quer:projection>
+
+
+<quer:projection alias="MgrRevCreationDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,CreationDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevApprovedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ApprovedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevReleasedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ReleasedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevAcknowledgementReqdDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,AcknowledgementRequestedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevAcknowledgedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,AcknowledgedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevReviewMeetingDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ReviewMeetingDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevCalibratedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,CalibratedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="MgrRevClosedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="ManagerReview,ClosedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevCreationDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,CreationDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevApprovedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ApprovedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevReleasedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ReleasedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevAcknowledgementReqDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,AcknowledgementRequestedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevAcknowledgedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,AcknowledgedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevReviewMeetingDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ReviewMeetingDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevCalibratedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,CalibratedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection><quer:projection alias="EmpRevClosedDate" projectedValueType="string">
+<quer:customFunction name="TO_CHAR"><quer:field path="SelfReview,ClosedDate"/>
+<quer:string>yyyy-MM-dd</quer:string>
+</quer:customFunction>
+</quer:projection>
+</quer:projections>
+
+<quer:projectionFilterings/>
+<quer:filterings>
+<quer:filtering><quer:greaterThanOrEqual><quer:field path="StartDate"/><quer:date>2014-01-01</quer:date></quer:greaterThanOrEqual></quer:filtering>
+<quer:filtering><quer:lessThanOrEqual><quer:field path="EndDate"/><quer:date>2014-12-31</quer:date></quer:lessThanOrEqual></quer:filtering>
+<!-- <quer:filtering><quer:equal><quer:field path="ReviewDefinition,Code"/><quer:string>2017_FedEx_Supply_Chain_Annual_Leader</quer:string></quer:equal></quer:filtering> -->
+
+
+
+<quer:filtering>
+  <quer:includedIn>
+    <quer:field path="ReviewDefinition,Code"/>
+    <quer:list>
+<quer:string>EPL Annual_Leaderv5</quer:string> 
+<quer:string>EPL Annual_Leaderv6</quer:string> 	
+<quer:string>EPL Annual_Leaderv8</quer:string> 
+<quer:string>EPLAnnual_Leaderv4</quer:string> 
+<quer:string>24198-EPL Annual_Leaderv7</quer:string>
+    </quer:list>
+  </quer:includedIn>
+</quer:filtering>
+
+<quer:filtering>
+  <quer:includedIn>
+    <quer:field path="Number"/>
+    <quer:list>
+
+<quer:string>24047</quer:string> 
+<quer:string>24048</quer:string> 
+<quer:string>24049</quer:string> 
+<quer:string>24050</quer:string> 
+<quer:string>24051</quer:string> 
+<quer:string>24052</quer:string> 
+<quer:string>24053</quer:string> 
+<quer:string>24054</quer:string> 
+<quer:string>24055</quer:string> 
+<quer:string>24056</quer:string> 
+<quer:string>24057</quer:string> 
+<quer:string>24058</quer:string> 
+<quer:string>24114</quer:string> 
+<quer:string>24119</quer:string> 
+<quer:string>24120</quer:string> 
+<quer:string>24121</quer:string> 
+<quer:string>24122</quer:string> 
+<quer:string>24123</quer:string> 
+<quer:string>24124</quer:string> 
+<quer:string>24125</quer:string> 
+<quer:string>24126</quer:string> 
+<quer:string>24127</quer:string> 
+<quer:string>24128</quer:string> 
+<quer:string>24129</quer:string> 
+<quer:string>24130</quer:string> 
+<quer:string>24131</quer:string> 
+<quer:string>24132</quer:string> 
+<quer:string>24133</quer:string> 
+<quer:string>24134</quer:string> 
+<quer:string>24135</quer:string> 
+<quer:string>24136</quer:string> 
+<quer:string>24137</quer:string> 
+<quer:string>24138</quer:string> 
+<quer:string>24139</quer:string> 
+<quer:string>24140</quer:string> 
+<quer:string>24141</quer:string> 
+<quer:string>24142</quer:string> 
+<quer:string>24143</quer:string> 
+<quer:string>24144</quer:string> 
+<quer:string>24145</quer:string> 
+<quer:string>24146</quer:string> 
+<quer:string>24147</quer:string> 
+<quer:string>24148</quer:string> 
+<quer:string>24149</quer:string> 
+<quer:string>24150</quer:string> 
+<quer:string>24151</quer:string> 
+<quer:string>24152</quer:string> 
+<quer:string>24153</quer:string> 
+<quer:string>24154</quer:string> 
+<quer:string>24155</quer:string> 
+<quer:string>24156</quer:string> 
+<quer:string>24157</quer:string> 
+<quer:string>24158</quer:string> 
+<quer:string>24159</quer:string> 
+<quer:string>24160</quer:string> 
+<quer:string>24161</quer:string> 
+<quer:string>24162</quer:string> 
+<quer:string>24163</quer:string> 
+<quer:string>24164</quer:string> 
+<quer:string>24165</quer:string> 
+<quer:string>24166</quer:string> 
+<quer:string>24167</quer:string> 
+<quer:string>24168</quer:string> 
+<quer:string>24169</quer:string> 
+<quer:string>24170</quer:string> 
+<quer:string>24171</quer:string> 
+<quer:string>24172</quer:string> 
+<quer:string>24173</quer:string> 
+<quer:string>24174</quer:string> 
+<quer:string>24175</quer:string> 
+<quer:string>24176</quer:string> 
+<quer:string>24177</quer:string> 
+<quer:string>24178</quer:string> 
+<quer:string>24179</quer:string> 
+<quer:string>24180</quer:string> 
+<quer:string>24181</quer:string> 
+<quer:string>24182</quer:string> 
+<quer:string>24183</quer:string> 
+<quer:string>24184</quer:string> 
+<quer:string>24185</quer:string> 
+<quer:string>24186</quer:string> 
+<quer:string>24187</quer:string> 
+<quer:string>24188</quer:string> 
+<quer:string>24189</quer:string> 
+<quer:string>24190</quer:string> 
+<quer:string>24191</quer:string> 
+<quer:string>24192</quer:string> 
+<quer:string>24193</quer:string> 
+<quer:string>24194</quer:string> 
+<quer:string>24195</quer:string> 
+<quer:string>24196</quer:string> 
+<quer:string>24197</quer:string> 
+<quer:string>24198</quer:string> 
+<quer:string>24199</quer:string> 
+<quer:string>24200</quer:string> 
+<quer:string>24201</quer:string> 
+<quer:string>21518</quer:string> 
+<quer:string>23979</quer:string> 
+<quer:string>23980</quer:string> 
+<quer:string>23981</quer:string> 
+<quer:string>23982</quer:string> 
+<quer:string>23983</quer:string> 
+<quer:string>23984</quer:string> 
+<quer:string>23985</quer:string> 
+<quer:string>23986</quer:string> 
+<quer:string>23987</quer:string> 
+<quer:string>23988</quer:string> 
+<quer:string>23989</quer:string> 
+<quer:string>23990</quer:string> 
+<quer:string>23991</quer:string> 
+<quer:string>23992</quer:string> 
+<quer:string>23993</quer:string> 
+<quer:string>23994</quer:string> 
+<quer:string>23995</quer:string> 
+<quer:string>23996</quer:string> 
+<quer:string>23997</quer:string> 
+<quer:string>23998</quer:string> 
+<quer:string>24019</quer:string> 
+<quer:string>24020</quer:string> 
+<quer:string>24021</quer:string> 
+<quer:string>24022</quer:string> 
+<quer:string>24023</quer:string> 
+<quer:string>24024</quer:string> 
+<quer:string>24025</quer:string> 
+<quer:string>24026</quer:string> 
+<quer:string>24027</quer:string> 
+<quer:string>24028</quer:string> 
+<quer:string>24029</quer:string> 
+<quer:string>24030</quer:string> 
+<quer:string>24031</quer:string> 
+<quer:string>24032</quer:string> 
+<quer:string>24033</quer:string> 
+<quer:string>24034</quer:string> 
+<quer:string>24035</quer:string> 
+<quer:string>24036</quer:string> 
+<quer:string>24037</quer:string> 
+<quer:string>24038</quer:string> 
+<quer:string>24046</quer:string> 
+<quer:string>24059</quer:string> 
+<quer:string>24060</quer:string> 
+<quer:string>24061</quer:string> 
+<quer:string>24062</quer:string> 
+<quer:string>24063</quer:string> 
+<quer:string>24064</quer:string> 
+<quer:string>24065</quer:string> 
+<quer:string>24066</quer:string> 
+<quer:string>24067</quer:string> 
+<quer:string>24068</quer:string> 
+<quer:string>24069</quer:string> 
+<quer:string>24070</quer:string> 
+<quer:string>24071</quer:string> 
+<quer:string>24072</quer:string> 
+<quer:string>24073</quer:string> 
+<quer:string>24074</quer:string> 
+<quer:string>24075</quer:string> 
+<quer:string>24076</quer:string> 
+<quer:string>24077</quer:string> 
+<quer:string>24078</quer:string> 
+<quer:string>24079</quer:string> 
+<quer:string>24080</quer:string> 
+<quer:string>24081</quer:string> 
+<quer:string>24082</quer:string> 
+<quer:string>24083</quer:string> 
+<quer:string>24084</quer:string> 
+<quer:string>24085</quer:string> 
+<quer:string>24086</quer:string> 
+<quer:string>24087</quer:string> 
+<quer:string>24088</quer:string> 
+<quer:string>24089</quer:string> 
+<quer:string>24090</quer:string> 
+<quer:string>24091</quer:string> 
+<quer:string>24092</quer:string> 
+<quer:string>24093</quer:string> 
+<quer:string>24094</quer:string> 
+<quer:string>24095</quer:string> 
+<quer:string>24096</quer:string> 
+<quer:string>24097</quer:string> 
+<quer:string>24098</quer:string> 
+<quer:string>24099</quer:string> 
+<quer:string>24100</quer:string> 
+<quer:string>24101</quer:string> 
+<quer:string>24102</quer:string> 
+<quer:string>24103</quer:string> 
+<quer:string>24104</quer:string> 
+<quer:string>24105</quer:string> 
+<quer:string>24106</quer:string> 
+<quer:string>24107</quer:string> 
+<quer:string>24108</quer:string> 
+<quer:string>24109</quer:string> 
+<quer:string>24110</quer:string> 
+<quer:string>24111</quer:string> 
+<quer:string>24112</quer:string> 
+<quer:string>24113</quer:string> 
+<quer:string>24115</quer:string> 
+<quer:string>24202</quer:string> 
+<quer:string>24203</quer:string> 
+<quer:string>24204</quer:string> 
+<quer:string>24205</quer:string> 
+<quer:string>24206</quer:string> 
+<quer:string>24207</quer:string> 
+<quer:string>24208</quer:string> 
+<quer:string>24209</quer:string> 
+<quer:string>24210</quer:string> 
+<quer:string>24211</quer:string> 
+<quer:string>24212</quer:string> 
+<quer:string>24213</quer:string> 
+<quer:string>24214</quer:string> 
+<quer:string>24215</quer:string> 
+<quer:string>24216</quer:string> 
+<quer:string>24217</quer:string> 
+<quer:string>24218</quer:string> 
+<quer:string>24219</quer:string> 
+<quer:string>24220</quer:string> 
+<quer:string>24221</quer:string> 
+<quer:string>24222</quer:string> 
+<quer:string>24223</quer:string> 
+<quer:string>24224</quer:string> 
+<quer:string>24225</quer:string> 
+<quer:string>24226</quer:string> 
+<quer:string>24227</quer:string> 
+<quer:string>24228</quer:string> 
+<quer:string>24229</quer:string> 
+<quer:string>24230</quer:string> 
+<quer:string>24231</quer:string> 
+<quer:string>24232</quer:string> 
+<quer:string>24233</quer:string> 
+<quer:string>24234</quer:string> 
+<quer:string>24235</quer:string> 
+<quer:string>24236</quer:string> 
+<quer:string>24237</quer:string> 
+<quer:string>24238</quer:string> 
+<quer:string>24239</quer:string> 
+<quer:string>24240</quer:string> 
+<quer:string>24241</quer:string> 
+<quer:string>24242</quer:string> 
+<quer:string>24243</quer:string> 
+<quer:string>24244</quer:string> 
+<quer:string>24245</quer:string> 
+<quer:string>24246</quer:string> 
+<quer:string>24247</quer:string> 
+<quer:string>24248</quer:string> 
+<quer:string>24249</quer:string> 
+<quer:string>24250</quer:string> 
+<quer:string>24251</quer:string> 
+<quer:string>24252</quer:string> 
+<quer:string>24253</quer:string> 
+<quer:string>24254</quer:string> 
+<quer:string>24255</quer:string> 
+<quer:string>24256</quer:string> 
+<quer:string>24257</quer:string> 
+<quer:string>24258</quer:string> 
+<quer:string>24259</quer:string> 
+<quer:string>24260</quer:string> 
+<quer:string>24261</quer:string> 
+<quer:string>24262</quer:string> 
+<quer:string>24263</quer:string> 
+<quer:string>24264</quer:string> 
+<quer:string>24265</quer:string> 
+<quer:string>24266</quer:string> 
+<quer:string>24267</quer:string> 
+<quer:string>24268</quer:string> 
+<quer:string>24269</quer:string> 
+<quer:string>24270</quer:string> 
+<quer:string>24271</quer:string> 
+<quer:string>24272</quer:string> 
+<quer:string>24273</quer:string> 
+<quer:string>24274</quer:string> 
+<quer:string>24275</quer:string> 
+<quer:string>24276</quer:string> 
+<quer:string>24277</quer:string> 
+<quer:string>24278</quer:string> 
+<quer:string>24279</quer:string> 
+<quer:string>24280</quer:string> 
+<quer:string>24281</quer:string> 
+<quer:string>24282</quer:string> 
+<quer:string>24283</quer:string> 
+<quer:string>24284</quer:string> 
+<quer:string>24285</quer:string> 
+<quer:string>24286</quer:string> 
+<quer:string>24287</quer:string> 
+<quer:string>24288</quer:string> 
+<quer:string>24289</quer:string> 
+<quer:string>24290</quer:string> 
+<quer:string>24291</quer:string> 
+<quer:string>24292</quer:string> 
+<quer:string>24293</quer:string> 
+<quer:string>24294</quer:string> 
+<quer:string>24295</quer:string> 
+<quer:string>24296</quer:string> 
+<quer:string>20119</quer:string> 
+<quer:string>20120</quer:string> 
+<quer:string>20121</quer:string> 
+<quer:string>20122</quer:string> 
+<quer:string>20123</quer:string> 
+<quer:string>20124</quer:string> 
+<quer:string>20125</quer:string> 
+<quer:string>20126</quer:string> 
+<quer:string>20127</quer:string> 
+<quer:string>20128</quer:string> 
+<quer:string>20129</quer:string> 
+<quer:string>20130</quer:string> 
+<quer:string>20131</quer:string> 
+<quer:string>20132</quer:string> 
+<quer:string>20133</quer:string> 
+<quer:string>20134</quer:string> 
+<quer:string>20135</quer:string> 
+<quer:string>20136</quer:string> 
+<quer:string>20137</quer:string> 
+<quer:string>20138</quer:string> 
+<quer:string>20179</quer:string> 
+<quer:string>20180</quer:string> 
+<quer:string>20181</quer:string> 
+<quer:string>20182</quer:string> 
+<quer:string>20183</quer:string> 
+<quer:string>20184</quer:string> 
+<quer:string>20185</quer:string> 
+<quer:string>20186</quer:string> 
+<quer:string>20187</quer:string> 
+<quer:string>20188</quer:string> 
+<quer:string>20189</quer:string> 
+<quer:string>20190</quer:string> 
+<quer:string>20191</quer:string> 
+<quer:string>20192</quer:string> 
+<quer:string>20193</quer:string> 
+<quer:string>20194</quer:string> 
+<quer:string>20195</quer:string> 
+<quer:string>20196</quer:string> 
+<quer:string>20197</quer:string> 
+<quer:string>20198</quer:string> 
+<quer:string>20219</quer:string> 
+<quer:string>20220</quer:string> 
+<quer:string>20221</quer:string> 
+<quer:string>20222</quer:string> 
+<quer:string>20223</quer:string> 
+<quer:string>20224</quer:string> 
+<quer:string>20225</quer:string> 
+<quer:string>20226</quer:string> 
+<quer:string>20227</quer:string> 
+<quer:string>20228</quer:string> 
+<quer:string>20229</quer:string> 
+<quer:string>20230</quer:string> 
+<quer:string>20231</quer:string> 
+<quer:string>20232</quer:string> 
+<quer:string>20233</quer:string> 
+<quer:string>20234</quer:string> 
+<quer:string>20235</quer:string> 
+<quer:string>20236</quer:string> 
+<quer:string>20237</quer:string> 
+<quer:string>20238</quer:string> 
+<quer:string>20239</quer:string> 
+<quer:string>20240</quer:string> 
+<quer:string>20241</quer:string> 
+<quer:string>20242</quer:string> 
+<quer:string>20243</quer:string> 
+<quer:string>20244</quer:string> 
+<quer:string>20245</quer:string> 
+<quer:string>20246</quer:string> 
+<quer:string>20247</quer:string> 
+<quer:string>20248</quer:string> 
+<quer:string>20249</quer:string> 
+<quer:string>20250</quer:string> 
+<quer:string>20251</quer:string> 
+<quer:string>20252</quer:string> 
+<quer:string>20253</quer:string> 
+<quer:string>20254</quer:string> 
+<quer:string>20255</quer:string> 
+<quer:string>20256</quer:string> 
+<quer:string>20257</quer:string> 
+<quer:string>20258</quer:string> 
+<quer:string>20259</quer:string> 
+<quer:string>20260</quer:string> 
+<quer:string>20261</quer:string> 
+<quer:string>20262</quer:string> 
+<quer:string>20263</quer:string> 
+<quer:string>20264</quer:string> 
+<quer:string>20265</quer:string> 
+<quer:string>20266</quer:string> 
+<quer:string>20267</quer:string> 
+<quer:string>20268</quer:string> 
+<quer:string>20269</quer:string> 
+<quer:string>20270</quer:string> 
+<quer:string>20271</quer:string> 
+<quer:string>20272</quer:string> 
+<quer:string>20273</quer:string> 
+
+	
+    </quer:list>
+  </quer:includedIn>
+</quer:filtering>
+
+</quer:filterings>
+
+<quer:sortings><quer:sorting ascending="true"><quer:field path="Number"/></quer:sorting></quer:sortings><quer:sortingFilterings/><quer:groupings/><quer:joinings/></quer:query>

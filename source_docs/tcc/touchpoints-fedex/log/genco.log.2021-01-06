@@ -1,0 +1,143 @@
+2021-01-06 10:00:52,025  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FA15_01_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FA15_01_sq.xml, response message=..\..\data\outbound\FA15_01_20210106_100047_20210106.csv 
+2021-01-06 10:00:55,951  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2021-01-06 10:00:55,982  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2021-01-06 10:00:56,092  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FA15_01.pgn'. 
+2021-01-06 10:00:56,092  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 100 and pageIndex = 1. 
+2021-01-06 10:00:56,281  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2021-01-06 10:00:56,328  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2021-01-06 10:00:56,360  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2021-01-06 10:00:56,375  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2021-01-06 10:00:56,406  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2021-01-06 10:00:56,422  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2021-01-06 10:00:58,137  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2021-01-06 10:00:58,152  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2021-01-06 10:00:59,159  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:01:10,258  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:01:21,252  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:01:32,333  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:01:43,564  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:01:54,815  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:02:06,024  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:02:17,296  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:02:28,548  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:02:40,219  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:02:51,174  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:03:02,305  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:03:13,349  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:03:24,359  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:03:35,384  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:03:46,395  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:03:57,765  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:04:09,054  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:04:20,112  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:04:31,098  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:04:42,161  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:04:53,235  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:05:04,554  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:05:15,800  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:05:26,862  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:05:37,896  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:05:48,952  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:06:00,567  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:06:11,879  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:06:23,429  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:06:34,673  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:06:45,967  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:06:57,434  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:07:08,479  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:07:19,620  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:07:30,629  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:07:41,923  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:07:53,160  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:08:04,620  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:08:15,973  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:08:27,461  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:08:38,581  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:08:50,147  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:09:01,197  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:09:12,435  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:09:23,833  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:09:35,265  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:09:46,335  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:09:57,406  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:10:08,458  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:10:19,761  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:10:30,768  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:10:42,047  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:10:53,319  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:11:04,628  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:11:15,923  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:11:27,030  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:11:38,068  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:11:49,230  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:12:00,489  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:12:11,743  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:12:22,840  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:12:34,330  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:12:45,380  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:12:56,682  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:13:07,900  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:13:18,926  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=;State=Queued;Record Count=1;Record Index=0; 
+2021-01-06 10:13:29,968  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FA15_01-010621_100054;Response Message Number=127807931;State=Completed;Record Count=1;Record Index=1; 
+2021-01-06 10:13:29,968  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2021-01-06 10:13:29,983  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2021-01-06 10:13:31,303  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2021-01-06 10:13:31,318  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2021-01-06 10:13:31,397  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 0 
+2021-01-06 10:13:31,397  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2021-01-06 10:13:31,412  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2021-01-06 10:13:31,428  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2021-01-06 10:13:31,443  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,475  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,490  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,506  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,522  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,522  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,537  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,553  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,568  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,568  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,586  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,601  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,618  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,618  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,634  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,650  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,665  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,681  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,696  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,696  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,712  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,728  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,743  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,743  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,759  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,775  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,790  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,790  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,821  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,821  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,837  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,853  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,868  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,884  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,915  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,915  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,946  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,962  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,978  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:31,993  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:32,025  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:32,040  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2021-01-06 10:13:32,056  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2021-01-06 10:13:32,056  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 0 records. 
+2021-01-06 10:13:32,056  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2021-01-06 10:13:32,103  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2021-01-06 10:13:32,168  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2021-01-06 10:13:34,619  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FA15_01_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FA15_01_sq.xml, response message=..\..\data\outbound\FA15_01_20210106_101333_20210106.csv 
+2021-01-06 10:13:36,268  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2021-01-06 10:13:36,302  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2021-01-06 10:13:36,385  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FA15_01.pgn'. 
+2021-01-06 10:13:36,400  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 

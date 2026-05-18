@@ -1,0 +1,6 @@
+venv/
+chroma_db
+.Trash-1000/
+*.log
+__pycache__/
+.DS_Store

@@ -1,0 +1,36 @@
+2021-01-21 16:49:32,834  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FA20_01_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FA20_01_sq.xml, response message=..\..\data\outbound\FA20_01_20210121_164929_20210121.csv 
+2021-01-21 16:49:36,595  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2021-01-21 16:49:36,628  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2021-01-21 16:49:36,737  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FA20_01.pgn'. 
+2021-01-21 16:49:36,737  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2021-01-21 16:49:36,875  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2021-01-21 16:49:36,906  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2021-01-21 16:49:36,937  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2021-01-21 16:49:36,953  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2021-01-21 16:49:36,984  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2021-01-21 16:49:37,000  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2021-01-21 16:49:39,925  [ERROR] com.taleo.integration.client.step.comm.BaseCommStep - Error in HTTP request, I/O exception:  
+java.net.UnknownHostException: host
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:472)
+	at sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:153)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:82)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:127)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at com.taleo.integration.client.step.comm.Sender.communicateTCS(Sender.java:484)
+	at com.taleo.integration.client.step.comm.Sender.communicate(Sender.java:329)
+	at com.taleo.integration.client.step.comm.BaseCommStep.execute(BaseCommStep.java:243)
+	at com.taleo.integration.client.workflow.WorkflowElement.execute(WorkflowElement.java:105)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:448)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:344)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:189)
+	at com.taleo.integration.client.Client.execute(Client.java:554)
+	at com.taleo.integration.client.Client.main(Client.java:250)

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE log4j:configuration PUBLIC 
+	"-//Apache Software Foundation//DTD Log4j//EN"
+	"http://logging.apache.org/log4j/docs/api/org/apache/log4j/xml/log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!--######### Appenders #########-->
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{ISO8601} [%p] %c - %m %n" />
+		</layout>
+	</appender>
+
+	<appender name="TCC"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${com.taleo.client.symbol.LOG_FOLDER}/${com.taleo.client.symbol.LOG_ID}.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{ISO8601} %X{EXTRACT_ID} [%p] %c - %m %n" />
+		</layout>
+	</appender>
+
+	<!--######### Loggers #########-->
+	<!-- Log4j offers five standard logging levels.
+		 From highest (coarsest) to lowest (finest):
+		 	FATAL 
+		 	ERROR 
+		 	WARN 
+		 	INFO 
+		 	DEBUG 
+	-->
+
+	<logger name="com.taleo.integration" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="TCC" />
+		<appender-ref ref="CONSOLE" />
+	</logger>
+
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="TCC" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>

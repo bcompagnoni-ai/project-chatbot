@@ -1,0 +1,55 @@
+2020-11-02 10:37:25,360  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=..\..\scripts\ReviewFields\P.ReviewFields_cfg.xml, request message=..\..\scripts\ReviewFields\ReviewFields_sq.xml, response message=..\..\data\outbound\review_fields_20201102_103723_20201102.csv 
+2020-11-02 10:37:27,026  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-02 10:37:27,038  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-02 10:37:27,090  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-ngc-base\bin\Windows\..\..\data\outbound\review-fields.pgn'. 
+2020-11-02 10:37:27,099  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 5000 and pageIndex = 1. 
+2020-11-02 10:37:27,299  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-02 10:37:27,315  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-02 10:37:27,326  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-02 10:37:27,338  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-02 10:37:27,348  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-02 10:37:27,358  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-02 10:37:28,297  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-02 10:37:28,306  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-02 10:37:28,918  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=P.YE_5000Review_2019-110220_103726;Response Message Number=126621140;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-02 10:37:39,491  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=P.YE_5000Review_2019-110220_103726;Response Message Number=126621140;State=Incoming;Record Count=0;Record Index=0; 
+2020-11-02 10:37:50,047  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=P.YE_5000Review_2019-110220_103726;Response Message Number=126621140;State=Incoming;Record Count=0;Record Index=0; 
+2020-11-02 10:53:36,306  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=..\..\scripts\ReviewFields\ReviewFields_loop_cfg.xml, request message=..\..\scripts\ReviewFields\ReviewFields_loop_sq.xml, response message=..\..\data\outbound\review_fields_20201102_105335_20201102.csv 
+2020-11-02 10:53:37,038  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-02 10:53:37,056  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-02 10:53:37,091  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-ngc-base\bin\Windows\..\..\data\outbound\review-fields.pgn'. 
+2020-11-02 10:53:37,093  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 100 and pageIndex = 1. 
+2020-11-02 10:53:37,279  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-02 10:53:37,297  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-02 10:53:37,312  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-02 10:53:37,323  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-02 10:53:37,334  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-02 10:53:37,344  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-02 10:53:38,231  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-02 10:53:38,245  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-02 10:53:38,878  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=P_2019_YE-110220_105336;Response Message Number=126621269;State=Completed;Record Count=1;Record Index=0; 
+2020-11-02 10:53:38,878  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-02 10:53:38,889  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-02 10:53:39,571  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-02 10:53:39,585  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-02 10:53:39,610  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 0 
+2020-11-02 10:53:39,611  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-02 10:53:39,622  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-02 10:53:39,632  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-02 10:53:39,642  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-02 10:53:39,674  [ERROR] com.taleo.integration.client.Client - The workflow execution failed!
+Error: A general internal error occurred.Use the monitoring feature to get more information. 
+2020-11-02 11:00:59,673  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=..\..\scripts\ReviewFields\ReviewFields_loop_cfg.xml, request message=..\..\scripts\ReviewFields\ReviewFields_loop_sq.xml, response message=..\..\data\outbound\review_fields_20201102_110058_20201102.csv 
+2020-11-02 11:01:00,471  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-02 11:01:00,487  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-02 11:01:00,525  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-ngc-base\bin\Windows\..\..\data\outbound\review-fields.pgn'. 
+2020-11-02 11:01:00,526  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 100 and pageIndex = 1. 
+2020-11-02 11:01:00,735  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-02 11:01:00,752  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-02 11:01:00,764  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-02 11:01:00,776  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-02 11:01:00,783  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-02 11:01:00,793  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-02 11:01:01,715  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-02 11:01:01,724  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-02 11:01:02,428  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=P_2019_YE-110220_110100;Response Message Number=126621210;State=In Progress;Record Count=1;Record Index=0; 

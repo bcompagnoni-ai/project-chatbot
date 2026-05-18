@@ -1,0 +1,27 @@
+--- START OF XSL FILE: ConfigBoardSymbols.xsl ---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ======================================= -->
+<!--
+		Get the configuration board symbols.
+-->
+<!-- ======================================= -->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:cli="http://www.taleo.com/ws/integration/client">
+	<xsl:output method="xml" encoding="UTF-8"/>
+	<!-- ============================================== -->
+	<!-- Render symbols-->
+	<!-- ============================================== -->
+	<xsl:template match="cli:BoardConfig/cli:Symbols">
+		<xsl:copy-of select="."/>
+	</xsl:template>
+	<!-- ============================================== -->
+	<!-- Render empty symbols element if none is defined. -->
+	<!-- ============================================== -->
+	<xsl:template match="cli:BoardConfig[not(cli:Symbols)]">
+		<cli:Symbols/>
+	</xsl:template>
+	<!-- ============================================== -->
+	<!-- Do not render text content for non-matching elements.-->
+	<!-- ============================================== -->
+	<xsl:template match="text()"/></xsl:stylesheet>
+
+--- END OF XSL FILE: ConfigBoardSymbols.xsl ---

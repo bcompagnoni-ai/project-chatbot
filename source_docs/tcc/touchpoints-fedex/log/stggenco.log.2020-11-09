@@ -1,0 +1,1095 @@
+2020-11-09 21:03:50,240  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_210347_20201109.csv 
+2020-11-09 21:03:51,603  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:03:51,628  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:03:51,702  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:03:51,755  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:03:51,886  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:03:51,930  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:03:51,986  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:03:52,021  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:03:52,049  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:03:52,073  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:03:54,984  [ERROR] com.taleo.integration.client.step.comm.BaseCommStep - Error in HTTP request, I/O exception:  
+java.net.UnknownHostException: host
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:472)
+	at sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:153)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:82)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:127)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at com.taleo.integration.client.step.comm.Sender.communicateTCS(Sender.java:484)
+	at com.taleo.integration.client.step.comm.Sender.communicate(Sender.java:329)
+	at com.taleo.integration.client.step.comm.BaseCommStep.execute(BaseCommStep.java:243)
+	at com.taleo.integration.client.workflow.WorkflowElement.execute(WorkflowElement.java:105)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:448)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:344)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:189)
+	at com.taleo.integration.client.Client.execute(Client.java:554)
+	at com.taleo.integration.client.Client.main(Client.java:250)
+2020-11-09 21:04:27,275  [ERROR] com.taleo.integration.client.step.comm.BaseCommStep - Error in HTTP request, I/O exception:  
+java.net.UnknownHostException: host
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:472)
+	at sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:153)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:82)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:127)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at com.taleo.integration.client.step.comm.Sender.communicateTCS(Sender.java:484)
+	at com.taleo.integration.client.step.comm.Sender.communicate(Sender.java:329)
+	at com.taleo.integration.client.step.comm.BaseCommStep.execute(BaseCommStep.java:269)
+	at com.taleo.integration.client.workflow.WorkflowElement.execute(WorkflowElement.java:105)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:448)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:344)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:189)
+	at com.taleo.integration.client.Client.execute(Client.java:554)
+	at com.taleo.integration.client.Client.main(Client.java:250)
+2020-11-09 21:04:59,558  [ERROR] com.taleo.integration.client.step.comm.BaseCommStep - Error in HTTP request, I/O exception:  
+java.net.UnknownHostException: host
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+	at sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:472)
+	at sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:153)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:82)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:127)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at com.taleo.integration.client.step.comm.Sender.communicateTCS(Sender.java:484)
+	at com.taleo.integration.client.step.comm.Sender.communicate(Sender.java:329)
+	at com.taleo.integration.client.step.comm.BaseCommStep.execute(BaseCommStep.java:269)
+	at com.taleo.integration.client.workflow.WorkflowElement.execute(WorkflowElement.java:105)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:448)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:344)
+	at com.taleo.integration.client.workflow.WorkflowManager.execute(WorkflowManager.java:189)
+	at com.taleo.integration.client.Client.execute(Client.java:554)
+	at com.taleo.integration.client.Client.main(Client.java:250)
+2020-11-09 21:24:01,304  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_212359_20201109.csv 
+2020-11-09 21:24:02,606  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:24:02,622  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:24:02,684  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:24:02,700  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:24:02,809  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:24:02,840  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:24:02,856  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:24:02,872  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:24:02,934  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:24:02,965  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:24:05,090  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:24:05,106  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:24:06,499  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_092401;Response Message Number=123706094;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:24:17,877  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_092401;Response Message Number=123706094;State=Incoming;Record Count=1000;Record Index=1000; 
+2020-11-09 21:24:29,131  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_092401;Response Message Number=123706094;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:24:29,131  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:24:29,162  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:24:38,074  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:24:38,090  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:24:38,418  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:24:38,418  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:24:38,434  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:24:39,168  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:24:39,184  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:24:40,028  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:24:40,050  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:24:40,522  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:24:40,538  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:24:40,991  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:24:41,007  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:24:41,007  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:24:41,007  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:24:41,085  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:24:41,116  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:24:43,022  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_212441_20201109.csv 
+2020-11-09 21:24:44,272  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:24:44,303  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:24:44,381  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:24:44,397  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:24:44,538  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:24:44,553  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:24:44,600  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:24:44,616  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:24:44,647  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:24:44,663  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:24:46,460  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:24:46,475  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:24:47,725  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_092443;Response Message Number=123706097;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:24:58,939  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_092443;Response Message Number=123706097;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:24:58,939  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:24:58,955  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:25:06,205  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:25:06,221  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:25:06,455  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:25:06,455  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:25:06,471  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:25:06,940  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:25:06,955  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:25:07,565  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:25:07,580  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:25:07,971  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:25:07,987  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:25:08,315  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:25:08,330  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:25:08,330  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:25:08,330  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:25:08,409  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:25:08,440  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:32:31,785  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_213230_20201109.csv 
+2020-11-09 21:32:33,100  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:32:33,132  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:32:33,194  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:32:33,210  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:32:35,295  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_213234_20201109.csv 
+2020-11-09 21:32:36,624  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:32:36,639  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:32:36,717  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:32:36,717  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:32:36,827  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:32:36,858  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:32:36,889  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:32:36,905  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:32:36,920  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:32:36,952  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:32:38,702  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:32:38,717  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:32:40,046  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093235;Response Message Number=123706100;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:32:51,251  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093235;Response Message Number=123706100;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:32:51,251  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:32:51,267  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:33:00,450  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:33:00,466  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:33:00,747  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:33:00,747  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:33:00,763  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:33:01,435  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:33:01,451  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:02,154  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:02,169  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:02,763  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:02,779  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:03,498  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:03,498  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:04,029  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:04,044  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:04,466  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:04,482  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:04,919  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:33:04,935  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:33:04,935  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:33:04,935  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:33:04,998  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:33:05,044  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:37:04,851  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_213703_20201109.csv 
+2020-11-09 21:37:06,211  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:37:06,242  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:37:06,305  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:37:06,320  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:37:06,461  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:37:06,492  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:37:06,523  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:37:06,539  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:37:06,555  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:37:06,648  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:37:08,602  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:37:08,617  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:37:09,930  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093705;Response Message Number=123706105;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:37:21,251  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093705;Response Message Number=123706105;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:37:21,251  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:37:21,267  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:37:29,858  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:37:29,874  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:37:30,140  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:37:30,140  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:37:30,171  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:37:30,733  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:37:30,765  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:31,374  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:31,390  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:31,999  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:31,999  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:32,577  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:32,593  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:33,108  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:33,124  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:33,640  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:33,655  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:34,062  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:34,093  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:34,546  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:34,562  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:34,921  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:34,937  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:35,234  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:35,249  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:35,499  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:37:35,515  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:37:35,515  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:37:35,515  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:37:35,577  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:37:35,624  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:37:37,855  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_213736_20201109.csv 
+2020-11-09 21:37:39,324  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:37:39,340  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:37:39,433  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:37:39,449  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:38:22,579  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_213820_20201109.csv 
+2020-11-09 21:38:23,891  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:38:23,923  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:38:23,985  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:38:23,985  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:38:24,141  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:38:24,173  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:38:24,204  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:38:24,235  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:38:24,251  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:38:24,266  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:38:26,088  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:38:26,104  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:38:27,494  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093823;Response Message Number=123706110;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:38:38,640  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093823;Response Message Number=123706110;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:38:38,640  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:38:38,672  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:38:47,737  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:38:47,753  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:38:48,081  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:38:48,081  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:38:48,112  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:38:48,831  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:38:48,831  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:49,472  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:49,487  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:50,097  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:50,112  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:50,769  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:50,769  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:51,284  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:51,315  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:51,815  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:51,847  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:52,269  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:52,284  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:52,816  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:52,831  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:53,128  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:53,144  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:53,425  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:53,456  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:53,753  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:38:53,769  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:38:53,769  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:38:53,769  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:38:53,831  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:38:53,878  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:38:55,759  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_213854_20201109.csv 
+2020-11-09 21:38:57,009  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:38:57,041  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:38:57,088  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:38:57,103  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:38:57,213  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:38:57,244  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:38:57,275  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:38:57,291  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:38:57,306  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:38:57,322  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:38:59,041  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:38:59,056  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:39:00,306  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093856;Response Message Number=123706135;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:39:11,562  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_093856;Response Message Number=123706135;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:39:11,562  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:39:11,578  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:39:18,630  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:39:18,630  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:39:18,880  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:39:18,880  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:39:18,911  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:39:19,411  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:39:19,427  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:20,052  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:20,068  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:20,568  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:20,583  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:21,099  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:21,115  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:21,630  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:21,646  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:22,115  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:22,130  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:22,490  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:22,521  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,005  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,021  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,302  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,302  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,599  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,615  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,880  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:39:23,896  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:39:23,896  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:39:23,896  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:39:23,959  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:39:24,005  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:45:37,848  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214536_20201109.csv 
+2020-11-09 21:45:39,114  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:45:39,145  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:45:39,223  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:45:39,239  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:45:41,194  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214539_20201109.csv 
+2020-11-09 21:45:42,444  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:45:42,475  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:45:42,538  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:45:42,538  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:45:42,663  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:45:42,678  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:45:42,710  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:45:42,725  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:45:42,741  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:45:42,756  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:45:44,505  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:45:44,520  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:45:45,812  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094541;Response Message Number=123706140;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:45:57,050  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094541;Response Message Number=123706140;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:45:57,050  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:45:57,065  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:46:06,445  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:46:06,460  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:46:06,757  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:46:06,757  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:46:06,773  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:46:07,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:46:07,491  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:08,210  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:08,226  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:08,882  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:08,882  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:09,632  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:09,648  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:10,210  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:10,226  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:10,648  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:10,663  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:11,070  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:11,085  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:11,570  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:11,585  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:11,929  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:11,945  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:12,226  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:12,242  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:12,539  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:12,554  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:12,851  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:12,867  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:13,164  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:13,179  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:13,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:13,492  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:13,757  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:13,773  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:14,039  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:46:14,054  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:46:14,054  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:46:14,070  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:46:14,132  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:46:14,195  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:46:40,288  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214638_20201109.csv 
+2020-11-09 21:46:41,553  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:46:41,584  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:46:41,631  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:46:41,647  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:46:41,772  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:46:41,803  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:46:41,834  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:46:41,850  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:46:41,913  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:46:41,944  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:46:43,725  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:46:43,741  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:46:44,960  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094640;Response Message Number=123706145;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:46:56,094  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094640;Response Message Number=123706145;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:46:56,094  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:46:56,125  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:47:03,087  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:47:03,087  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:47:03,306  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:47:03,306  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:47:03,337  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:47:03,838  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:47:03,854  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:04,416  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:04,432  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:04,900  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:04,916  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:05,400  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:05,416  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:05,776  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:05,791  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:06,119  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:06,135  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:06,479  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:06,494  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:06,885  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:06,901  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,135  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,151  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,385  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,401  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,619  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,635  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,932  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:07,947  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,166  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,182  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,416  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,448  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,666  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,682  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,885  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:08,901  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:47:08,901  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:47:08,901  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:47:08,963  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:47:08,994  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:47:10,848  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214709_20201109.csv 
+2020-11-09 21:47:12,082  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:47:12,098  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:47:12,160  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:47:12,176  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:47:13,954  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214712_20201109.csv 
+2020-11-09 21:47:15,219  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:47:15,251  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:47:15,297  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:47:15,313  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:47:15,423  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:47:15,454  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:47:15,469  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:47:15,501  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:47:15,516  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:47:15,532  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:47:17,267  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:47:17,282  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:47:18,532  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094714;Response Message Number=123706150;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:47:29,767  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094714;Response Message Number=123706150;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:47:29,767  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:47:29,782  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:47:38,955  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:47:38,970  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:47:39,252  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:47:39,252  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:47:39,283  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:47:39,939  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:47:39,955  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:40,611  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:40,627  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:41,221  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:41,236  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:42,049  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:42,064  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:42,580  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:42,596  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:43,002  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:43,002  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:43,424  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:43,439  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:43,940  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:43,955  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:44,299  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:44,314  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:44,830  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:44,846  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:45,151  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:45,166  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:45,448  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:45,463  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:45,757  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:45,788  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:46,179  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:46,194  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:46,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:46,491  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:46,773  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:47:46,788  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:47:46,788  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:47:46,788  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:47:46,851  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:47:46,898  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:47:48,820  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214747_20201109.csv 
+2020-11-09 21:47:50,086  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:47:50,102  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:47:50,164  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:47:50,180  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:47:50,289  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:47:50,320  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:47:50,352  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:47:50,367  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:47:50,399  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:47:50,414  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:47:52,122  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:47:52,138  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:47:53,359  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094749;Response Message Number=123706155;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:48:04,563  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094749;Response Message Number=123706155;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:48:04,563  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:48:04,594  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:48:11,554  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:48:11,570  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:48:11,789  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:48:11,789  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:48:11,804  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:48:12,320  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:48:12,335  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:12,882  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:12,914  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:13,445  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:13,461  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:13,976  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:13,992  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:14,383  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:14,414  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:14,851  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:14,867  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:15,195  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:15,211  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:15,633  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:15,648  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:15,883  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:15,898  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,195  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,226  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,726  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,742  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,976  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:16,992  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:17,242  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:17,258  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:17,617  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:17,633  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:17,867  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:48:17,867  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:48:17,867  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:48:17,883  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:48:17,930  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:48:17,976  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:48:20,250  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214818_20201109.csv 
+2020-11-09 21:48:21,656  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:48:21,687  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:48:21,750  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:48:21,766  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:48:35,088  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214832_20201109.csv 
+2020-11-09 21:48:36,651  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:48:36,682  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:48:36,745  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:48:36,745  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:48:36,901  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:48:36,932  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:48:36,948  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:48:36,963  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:48:36,995  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:48:37,057  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:48:38,823  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:48:38,839  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:48:40,261  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094835;Response Message Number=123706160;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:48:51,487  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094835;Response Message Number=123706160;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:48:51,487  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:48:51,518  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:49:00,712  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:49:00,728  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:49:01,009  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:49:01,009  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:49:01,024  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:49:01,712  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:49:01,728  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:02,431  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:02,431  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:03,040  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:03,056  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:03,712  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:03,728  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:04,275  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:04,290  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:04,712  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:04,728  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:05,134  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:05,150  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:05,650  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:05,665  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:05,978  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:05,993  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:06,275  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:06,290  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:06,572  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:06,587  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:06,884  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:06,900  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:07,197  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:07,212  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:07,509  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:07,525  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:07,807  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:07,822  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:08,290  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:08,306  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:49:08,306  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:49:08,306  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:49:08,369  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:49:08,415  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:49:10,230  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214909_20201109.csv 
+2020-11-09 21:49:11,480  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:49:11,511  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:49:11,574  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:49:11,574  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:49:11,683  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:49:11,714  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:49:11,730  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:49:11,761  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:49:11,777  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:49:11,792  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:49:13,512  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:49:13,528  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:49:14,731  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094910;Response Message Number=123706165;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:49:26,014  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094910;Response Message Number=123706165;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:49:26,014  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:49:26,030  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:49:33,086  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:49:33,101  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:49:33,336  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:49:33,336  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:49:33,351  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:49:33,867  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:49:33,882  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:34,461  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:34,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:34,961  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:34,976  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:35,461  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:35,476  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:35,908  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:35,908  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:36,283  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:36,314  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:36,658  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:36,689  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,133  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,149  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,383  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,399  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,642  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,658  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,908  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:37,923  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,158  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,173  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,408  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,423  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,673  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,689  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,939  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:38,955  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:39,174  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:49:39,189  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:49:39,189  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:49:39,189  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:49:39,236  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:49:39,314  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:49:41,230  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214940_20201109.csv 
+2020-11-09 21:49:42,480  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:49:42,511  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:49:42,558  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:49:42,574  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:49:44,390  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_214943_20201109.csv 
+2020-11-09 21:49:45,625  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:49:45,656  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:49:45,718  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:49:45,718  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:49:45,843  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:49:45,890  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:49:45,922  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:49:45,937  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:49:45,953  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:49:45,984  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:49:47,748  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:49:47,764  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:49:48,998  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094944;Response Message Number=123706170;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:50:00,316  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_094944;Response Message Number=123706170;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:50:00,316  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:50:00,331  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:50:09,464  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:50:09,479  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:50:09,776  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:50:09,776  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:50:09,808  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:50:10,620  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:50:10,636  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:11,386  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:11,401  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:12,105  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:12,120  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:12,995  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:13,027  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:13,698  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:13,714  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:14,167  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:14,183  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:14,667  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:14,683  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:15,308  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:15,324  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:15,620  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:15,636  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:15,949  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:15,964  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:16,324  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:16,339  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:16,761  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:16,777  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:17,105  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:17,105  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:17,480  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:17,511  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:17,839  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:17,855  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:18,183  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:18,199  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:50:18,199  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:50:18,199  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:50:18,277  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:50:18,324  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:50:20,559  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_215019_20201109.csv 
+2020-11-09 21:50:22,184  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:50:22,215  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:50:22,309  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:50:22,325  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:50:22,465  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:50:22,497  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:50:22,528  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:50:22,559  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:50:22,590  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:50:22,622  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:50:24,434  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:50:24,450  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:50:25,710  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095021;Response Message Number=123706175;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:50:36,911  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095021;Response Message Number=123706175;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:50:36,911  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:50:36,942  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:50:43,883  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:50:43,899  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:50:44,123  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:50:44,123  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:50:44,139  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:50:44,702  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:50:44,733  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:45,280  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:45,295  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:45,764  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:45,780  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:46,342  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:46,358  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:46,780  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:46,795  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:47,155  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:47,170  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:47,499  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:47,530  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:47,952  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:47,967  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,233  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,249  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,483  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,499  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,733  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,749  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:48,999  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,014  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,311  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,311  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,577  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,592  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,811  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:49,827  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:50,093  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:50:50,108  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:50:50,108  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:50:50,108  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:50:50,171  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:50:50,217  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:52:23,281  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_215221_20201109.csv 
+2020-11-09 21:52:24,843  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:52:24,859  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:52:24,937  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:52:24,937  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:52:25,078  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:52:25,109  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:52:25,140  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:52:25,171  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:52:25,218  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:52:25,249  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:52:27,171  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:52:27,187  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:52:28,546  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095223;Response Message Number=123706180;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:52:39,810  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095223;Response Message Number=123706180;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:52:39,810  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:52:39,841  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:52:49,077  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:52:49,093  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:52:49,421  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:52:49,436  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:52:49,452  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:52:50,202  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:52:50,218  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:50,968  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:50,983  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:51,640  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:51,655  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:52,343  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:52,358  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:52,937  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:52,937  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:53,327  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:53,343  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:53,780  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:53,780  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:54,327  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:54,343  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:54,640  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:54,655  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:54,983  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,015  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,390  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,405  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,687  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,702  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,984  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:55,999  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:56,439  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:56,455  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:56,736  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:56,751  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:57,048  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:52:57,048  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:52:57,048  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:52:57,064  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:52:57,111  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:52:57,173  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:52:59,159  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_215257_20201109.csv 
+2020-11-09 21:53:00,519  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:53:00,534  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:53:00,597  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:53:00,612  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:53:00,737  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:53:00,769  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:53:00,800  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:53:00,815  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:53:00,831  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:53:00,847  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:53:02,661  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:53:02,676  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:53:03,929  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095259;Response Message Number=123706120;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:53:15,230  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095259;Response Message Number=123706120;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:53:15,230  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:53:15,246  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:53:22,124  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:53:22,140  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:53:22,374  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:53:22,374  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:53:22,390  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:53:22,890  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:53:22,906  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:23,390  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:23,406  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:23,906  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:23,906  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:24,468  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:24,484  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:24,984  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:25,000  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:25,375  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:25,406  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:25,765  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:25,781  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:26,203  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:26,203  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:26,500  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:26,515  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:26,781  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:26,797  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:27,047  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:27,062  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:27,390  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:27,406  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:27,687  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:27,718  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:28,093  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:28,125  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:28,390  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:28,406  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:28,703  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:53:28,718  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:53:28,718  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:53:28,718  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:53:28,781  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:53:28,843  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:53:31,078  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_215329_20201109.csv 
+2020-11-09 21:53:32,532  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:53:32,563  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:53:32,641  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:53:32,657  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - The run was aborted since the paging is complete. Exiting with code: 0
+ 
+2020-11-09 21:53:34,774  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_215333_20201109.csv 
+2020-11-09 21:53:36,149  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:53:36,181  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:53:36,243  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:53:36,243  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 1. 
+2020-11-09 21:53:36,384  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:53:36,415  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:53:36,431  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:53:36,462  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:53:36,478  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:53:36,493  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:53:38,306  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:53:38,322  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:53:39,590  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095335;Response Message Number=123706121;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:53:50,827  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095335;Response Message Number=123706121;State=Completed;Record Count=1000;Record Index=1000; 
+2020-11-09 21:53:50,827  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:53:50,843  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:53:59,996  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:54:00,012  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:54:00,324  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 1000 
+2020-11-09 21:54:00,324  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:54:00,356  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:54:01,215  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:54:01,231  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:01,950  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:01,965  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:02,653  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:02,684  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:03,418  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:03,434  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:03,981  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:03,996  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:04,403  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:04,418  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:04,856  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:04,871  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:05,465  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:05,481  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:05,793  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:05,793  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:06,153  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:06,168  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:06,465  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:06,481  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:06,809  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:06,825  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:07,122  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:07,122  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:07,450  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:07,465  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:07,747  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:07,762  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:08,044  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:08,075  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:54:08,075  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 1 contains 1000 records. 
+2020-11-09 21:54:08,075  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:54:08,138  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:54:08,184  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
+2020-11-09 21:54:10,159  [INFO] com.taleo.integration.client.Client - Taleo Connect Client invoked with configuration=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_loop_cfg.xml, request message=C:\TCC\touchpoints-fedex\scripts\Annual\FEDEX_Annual_sq.xml, response message=..\..\data\outbound\Fedex_Annual_20201109_215408_20201109.csv 
+2020-11-09 21:54:11,440  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow execution 
+2020-11-09 21:54:11,472  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPreStep 
+2020-11-09 21:54:11,534  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using the following paging file: 'C:\TCC\touchpoints-fedex\bin\Windows\..\..\data\outbound\FEDEX_Annual-review-fields.pgn'. 
+2020-11-09 21:54:11,534  [INFO] com.taleo.integration.client.customstep.paging.PagingPreStep - Using pagingSize = 1000 and pageIndex = 2. 
+2020-11-09 21:54:11,675  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPreStep 
+2020-11-09 21:54:11,722  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Prepare Export 
+2020-11-09 21:54:11,737  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Prepare Export 
+2020-11-09 21:54:11,768  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Wrap SOAP 
+2020-11-09 21:54:11,784  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Wrap SOAP 
+2020-11-09 21:54:11,800  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Send 
+2020-11-09 21:54:13,597  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Send 
+2020-11-09 21:54:13,612  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Poll 
+2020-11-09 21:54:14,800  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095410;Response Message Number=123706122;State=In Progress;Record Count=1;Record Index=0; 
+2020-11-09 21:54:25,950  [INFO] com.taleo.integration.client.step.comm.Poller - Poll results: Request Message ID=FEDEX_TEST-110920_095410;Response Message Number=123706122;State=Completed;Record Count=734;Record Index=734; 
+2020-11-09 21:54:25,950  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Poll 
+2020-11-09 21:54:25,966  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Retrieve 
+2020-11-09 21:54:33,014  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Retrieve 
+2020-11-09 21:54:33,030  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: ExportCountPostStep 
+2020-11-09 21:54:33,295  [INFO] com.taleo.integration.client.customstep.count.ExportCountPostStep - Current record count: 734 
+2020-11-09 21:54:33,295  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: ExportCountPostStep 
+2020-11-09 21:54:33,311  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: Strip SOAP 
+2020-11-09 21:54:33,811  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: Strip SOAP 
+2020-11-09 21:54:33,827  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:34,358  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:34,389  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:34,874  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:34,889  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:35,420  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:35,420  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:35,842  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:35,858  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:36,249  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:36,264  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:36,592  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:36,608  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,030  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,045  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,296  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,311  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,577  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,592  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,827  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:37,842  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:38,092  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:38,108  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:38,374  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:38,389  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:38,717  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:38,764  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:39,092  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:39,108  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:39,374  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: RemoveHTMLPostStep 
+2020-11-09 21:54:39,389  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Starting workflow step: PagingPostStep 
+2020-11-09 21:54:39,389  [INFO] com.taleo.integration.client.customstep.paging.PagingPostStep - Iteration 2 contains 734 records. 
+2020-11-09 21:54:39,389  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow step: PagingPostStep 
+2020-11-09 21:54:39,436  [INFO] com.taleo.integration.client.workflow.WorkflowManager - Completed workflow execution 
+2020-11-09 21:54:39,483  [INFO] com.taleo.integration.client.Client - The workflow execution succeeded.
+ 
